@@ -91,6 +91,11 @@ Then we check if the deletion was successful using:
 SHOW PDBS;
 <img width="1536" height="1024" alt="Capture9" src="https://github.com/user-attachments/assets/f99433a3-98f0-4826-9656-277b70cc712c" />
 
+Task 3: Oracle Entreprise Manager (OEM)
+Firstly, it is highly advised to create a connection from our Oracle PDB user to SQL developer.
+<img width="1536" height="1024" alt="Capture10" src="https://github.com/user-attachments/assets/c64165c2-8a2a-4c1b-bdfb-de3e970654da" />
+
+
 
 
 
