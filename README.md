@@ -24,6 +24,7 @@ The next step is to create a PDB:
 CREATE PLUGGABLE DATABASE ng_pdb_27980
 ADMIN USER pdbadmin IDENTIFIED BY 27980
 FILE_NAME_CONVERT = ('C:\USERS\NGOGA\DOWNLOADS\ORADATA\ORCL\PDBSEED\','C:\USERS\NGOGA\DOWNLOADS\ORADATA\ORCL\PDBSEED\ng_pdb_27980\');
+
 CREATE PLUGGABLE DATABASE : creates the new PDB
 ADMIN USER pdbadmin : creates an administrative user for that PDB
 FILE_NAME_CONVERT : tells Oracle where to copy the datafiles from the seed database. The first path before the comma is the Old path which is the Current data location we found in the above steps and the next path is the New path which has same name as our created PDB.
@@ -70,6 +71,7 @@ Firstly, we must switch back to ROOT:
 
 ALTER SESSION SET CONTAINER = CDB$ROOT;
 SHOW CON_NAME;
+
 <img width="716" height="136" alt="Capture7" src="https://github.com/user-attachments/assets/2753b016-fbbb-4f65-8f8b-fd9bb0016a09" />
 
 
@@ -78,6 +80,7 @@ Secondly, create the Temporary PDB using:
 CREATE PLUGGABLE DATABASE ng_to_delete_pdb_27980
 ADMIN USER pdbadmin IDENTIFIED BY 27980
 FILE_NAME_CONVERT = ('C:\USERS\NGOGA\DOWNLOADS\ORADATA\ORCL\PDBSEED\','C:\USERS\NGOGA\DOWNLOADS\ORADATA\ORCL\PDBSEED\ng_to_delete_pdb_27980\');
+
 Then check if it exists using:
 <img width="1536" height="1024" alt="Capture8" src="https://github.com/user-attachments/assets/98c6a4ad-c81f-43de-9481-975dbf7d1bd3" />
 
@@ -93,6 +96,7 @@ SHOW PDBS;
 
 Task 3: Oracle Entreprise Manager (OEM)
 Firstly, it is highly advised to create a connection from our Oracle PDB user to SQL developer.
+
 <img width="1536" height="1024" alt="Capture10" src="https://github.com/user-attachments/assets/c64165c2-8a2a-4c1b-bdfb-de3e970654da" />
 
 
